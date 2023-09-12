@@ -1,0 +1,71 @@
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box{
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: rgba(75, 75, 75, 0.788);
+}
+.center{
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+.button-cont{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-top: 2px solid #aeaeaea5;
+  padding: 1rem;
+}
+.btn{
+  background-color: rgb(142, 236, 250);
+  width: 100%;
+  padding:0.7rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+}
+.btn-reset{
+  background-color: rgb(197, 197, 197);
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+
+.red {
+  color: red;
+}
+
+.white {
+  color: white;
+}
+
+@keyframes blink-animation {
+  0%, 100% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+}
